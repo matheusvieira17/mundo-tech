@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap');
+
+@font-face {
+    font-family: "android";
+    src: url(../fontes/nasalization-rg.otf) format("opentype");
+    font-weight: normal;
+    font-size: normal;
+}
+
+:root {
+    --color-default: #f5f5f5;
+    --color0: #c9e9ec;
+    --color1: #61D8E0;
+    --color2: #4BA7AD;
+    --color3: #273436;
+    --color-shadow: #00000069;
+ 
+    --font-android: "Android", cursive;
+    --font-highlight: "Inconsolata", monospace;
+    --font-default: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: var(--color0);
+    font-family: var(--font-default);
+}
+
+.header-container {
+    font-family: var(--font-android);
+
+    background-image: linear-gradient(to bottom, var(--color1), 
+    var(--color2));
+
+    color: var(--color-default);
+    width: 100%;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+a.external::after {
+    content: " \1F517";
+}
+
+.menu {
+    background-color: var(--color2);
+    padding: 20px;
+}
+
+.menu a {
+    font-family: var(--font-default);
+    font-size: 0.9em;
+    font-weight: bolder;
+
+    margin: 5px;
+    margin-top: 40px;
+    text-decoration: none;
+
+    color: var(--color-default);
+}
+
+.menu a:hover {
+    color: var(--color3);
+    background-color: var(--color0);
+
+    padding: 3px;
+    transition-duration: 0.6s;
+    border-radius: 3px;
+}
+
+.header-container h1 {
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-shadow: 2px 2px var(--color-shadow);
+}
+
+.header-container p {
+    font-size: 1.1em;
+    text-shadow: 2px 2px var(--color-shadow);
+}
+
+.principal-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 15px;
+    background-color: var(--color-default);
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 10px var(--color-shadow);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.principal-container img {
+    width: 100%
+}
+
+.principal-container img.small {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.principal-container strong {
+    color: var(--color3)
+}
+
+.principal-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color3);
+    background-color: var(--color0);
+    padding: 2px 2px;
+}
+
+.principal-container a:hover {
+    text-decoration: underline;
+    color: var(--color2)
+}
+
+.principal-container h1 {
+    font-family: var(--font-highlight);
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+.principal-container h2 {
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    font-family: var(--font-highlight);
+    font-size: 1.7em;
+    text-indent: 5px;
+    margin-top: 30px;
+    padding-left: 5px;
+}
+
+.principal-container p {
+    margin: 20px 0px;
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+.video-container {
+    background-color: var(--color2);
+    margin: 0 -15px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.curiosity h3 {
+    font-family: var(--font-highlight);
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: var(--color1);
+    color: var(--color3);
+
+    padding: 10px;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-bottom: 0px;
+    margin-left: -10px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.curiosity {
+    margin-top: 30px;
+    background-color: var(--color0);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dashed var(--color2);
+    box-shadow: 2px 2px 12px var(--color-shadow);
+}
+
+.curiosity ul {
+    list-style-type: square;
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer p {
+    background-color: var(--color3);
+    color: var(--color-default);
+    text-align: center;
+    font-size: 0.9em;
+    padding: 8px;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-default);
+    font-weight: bold;
+}
+
+footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--color0);
+}
+
+
+@media (max-width: 425px) {
+    .curiosity ul {
+        columns: 1;
+    }
+}
