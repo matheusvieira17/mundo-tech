@@ -10,3 +10,4 @@ Alguns conhecimentos usados
 - Variáveis em CSS
 - Posicionamento de elementos 
 
+Você pode ver como o blog ficou <a href="https://matheusvieira17.github.io/mundo-tech/" target="_blank" > aqui </a>
